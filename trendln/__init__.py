@@ -831,3 +831,6 @@ def plot_support_resistance(hist, xformatter = None, numbest = 2, fromwindows = 
     #plt.savefig(os.path.join(curdir, 'data', 'suppres.svg'), format='svg', bbox_inches = 'tight')
     #plt.show()
     return plt.gcf()
+
+def test():
+    print('test_julia_clone')
