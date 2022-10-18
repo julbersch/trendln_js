@@ -404,6 +404,7 @@ def check_num_alike(h):
         else: return False
 def get_extrema(h, extmethod=METHOD_NUMDIFF, accuracy=1):
     #h must be single dimensional array-like object e.g. List, np.ndarray, pd.Series
+    print('testing_package cloning')
     if type(h) is tuple and len(h) == 2 and (h[0] is None or check_num_alike(h[0])) and (h[1] is None or check_num_alike(h[1])) and (not h[0] is None or not h[1] is None):
         hmin, hmax = h[0], h[1]
         if not h[0] is None and not h[1] is None and len(hmin) != len(hmax): #not strict requirement, but contextually ideal
